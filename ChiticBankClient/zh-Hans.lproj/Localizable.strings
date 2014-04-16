@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  ChiticBankClient
+
+  Created by chitic on 13-5-16.
+  Copyright (c) 2013年 chitic. All rights reserved.
+*/
+AppTitle="分布式新能源数据监控终端";
+AppLogout="注销";
+PlantList="电站列表";

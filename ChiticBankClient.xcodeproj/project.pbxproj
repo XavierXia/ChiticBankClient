@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C42405D1886C83D000B944E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C42405C1886C83D000B944E /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF1D161D17250CCF009BD80A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1D161C17250CCF009BD80A /* UIKit.framework */; };
+		CF1D161F17250CCF009BD80A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1D161E17250CCF009BD80A /* Foundation.framework */; };
+		CF1D162117250CCF009BD80A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1D162017250CCF009BD80A /* CoreGraphics.framework */; };
+		CF1D162717250CCF009BD80A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF1D162517250CCF009BD80A /* InfoPlist.strings */; };
+		CF1D162917250CCF009BD80A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1D162817250CCF009BD80A /* main.m */; };
+		CF1D162D17250CCF009BD80A /* chiticeaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1D162C17250CCF009BD80A /* chiticeaAppDelegate.m */; };
+		CF1D162F17250CCF009BD80A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1D162E17250CCF009BD80A /* Default.png */; };
+		CF1D163117250CCF009BD80A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1D163017250CCF009BD80A /* Default@2x.png */; };
+		CF1D163317250CCF009BD80A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1D163217250CCF009BD80A /* Default-568h@2x.png */; };
+		CF1D163617250CCF009BD80A /* chiticeaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1D163517250CCF009BD80A /* chiticeaViewController.m */; };
+		CF1D163917250CCF009BD80A /* chiticeaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1D163717250CCF009BD80A /* chiticeaViewController.xib */; };
+		CF1D164117250CCF009BD80A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1D164017250CCF009BD80A /* SenTestingKit.framework */; };
+		CF1D164217250CCF009BD80A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1D161C17250CCF009BD80A /* UIKit.framework */; };
+		CF1D164317250CCF009BD80A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1D161E17250CCF009BD80A /* Foundation.framework */; };
+		CF1D164B17250CCF009BD80A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF1D164917250CCF009BD80A /* InfoPlist.strings */; };
+		CF1D164E17250CCF009BD80A /* ChiticBankClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1D164D17250CCF009BD80A /* ChiticBankClientTests.m */; };
+		CF1D165A172515F3009BD80A /* plantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1D1658172515F3009BD80A /* plantListViewController.m */; };
+		CF1D165B172515F3009BD80A /* plantListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1D1659172515F3009BD80A /* plantListViewController.xib */; };
+		CF3884BF1884C9F4003680C7 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884AC1884C9F4003680C7 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C01884C9F4003680C7 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884AF1884C9F4003680C7 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C11884C9F4003680C7 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B11884C9F4003680C7 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C21884C9F4003680C7 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B31884C9F4003680C7 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C31884C9F4003680C7 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B51884C9F4003680C7 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C41884C9F4003680C7 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B71884C9F4003680C7 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C51884C9F4003680C7 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884BB1884C9F4003680C7 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C61884C9F4003680C7 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884BD1884C9F4003680C7 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884C81884CA16003680C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3884C71884CA16003680C7 /* SystemConfiguration.framework */; };
+		CF3884CA1884CA36003680C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3884C91884CA36003680C7 /* MobileCoreServices.framework */; };
+		CF3884CC1884CA4C003680C7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3884CB1884CA4C003680C7 /* libz.1.2.5.dylib */; };
+		CF3884CD1884CADE003680C7 /* ASIAuthenticationDialog.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884AB1884C9F4003680C7 /* ASIAuthenticationDialog.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884CE1884CADE003680C7 /* ASICacheDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884AD1884C9F4003680C7 /* ASICacheDelegate.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884CF1884CADE003680C7 /* ASIDataCompressor.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884AE1884C9F4003680C7 /* ASIDataCompressor.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF3884D01884CADE003680C7 /* ASIDataDecompressor.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B01884C9F4003680C7 /* ASIDataDecompressor.h */; };
+		CF3884D11884CADE003680C7 /* ASIDownloadCache.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B21884C9F4003680C7 /* ASIDownloadCache.h */; };
+		CF3884D21884CADE003680C7 /* ASIFormDataRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B41884C9F4003680C7 /* ASIFormDataRequest.h */; };
+		CF3884D31884CADE003680C7 /* ASIHTTPRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B61884C9F4003680C7 /* ASIHTTPRequest.h */; };
+		CF3884D41884CADE003680C7 /* ASIHTTPRequestConfig.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B81884C9F4003680C7 /* ASIHTTPRequestConfig.h */; };
+		CF3884D51884CADE003680C7 /* ASIHTTPRequestDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884B91884C9F4003680C7 /* ASIHTTPRequestDelegate.h */; };
+		CF3884D61884CADE003680C7 /* ASIInputStream.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884BA1884C9F4003680C7 /* ASIInputStream.h */; };
+		CF3884D71884CADE003680C7 /* ASINetworkQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884BC1884C9F4003680C7 /* ASINetworkQueue.h */; };
+		CF3884D81884CADE003680C7 /* ASIProgressDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884BE1884C9F4003680C7 /* ASIProgressDelegate.h */; };
+		CF3884DB1884CC31003680C7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884DA1884CC31003680C7 /* Reachability.m */; };
+		CF3884DC1884CC81003680C7 /* Reachability.h in Sources */ = {isa = PBXBuildFile; fileRef = CF3884D91884CC31003680C7 /* Reachability.h */; };
+		CF3884DD1884CC81003680C7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3884DA1884CC31003680C7 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF38850D1884DA37003680C7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF38850C1884DA37003680C7 /* libxml2.dylib */; };
+		CF3885101884DA41003680C7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF38850F1884DA41003680C7 /* CFNetwork.framework */; };
+		CF7E1471174373A20080608A /* CharAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E146F174373A20080608A /* CharAnalysisViewController.m */; };
+		CF7E1472174373A20080608A /* CharAnalysisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF7E1470174373A20080608A /* CharAnalysisViewController.xib */; };
+		CF7E1477174374DA0080608A /* DeviceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7E1475174374DA0080608A /* DeviceDataViewController.m */; };
+		CF7E1478174374DA0080608A /* DeviceDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF7E1476174374DA0080608A /* DeviceDataViewController.xib */; };
+		CFCA7FE1174508430086B3EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFCA7FE0174508430086B3EE /* Localizable.strings */; };
+		CFCA7FEB174509DA0086B3EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFCA7FE9174509DA0086B3EE /* Localizable.strings */; };
+		CFCBAF201728B5CC0007111A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFCBAF1F1728B5CC0007111A /* logo.png */; };
+		CFCBAF221728BF7A0007111A /* bk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFCBAF211728BF7A0007111A /* bk.jpg */; };
+		CFCBAF311728C5A70007111A /* PlantOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCBAF2F1728C5A70007111A /* PlantOverviewViewController.m */; };
+		CFCBAF321728C5A70007111A /* PlantOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFCBAF301728C5A70007111A /* PlantOverviewViewController.xib */; };
+		CFCDC1921745DDD600CFC6E9 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCDC1901745DDD600CFC6E9 /* AboutUsViewController.m */; };
+		CFCDC1931745DDD600CFC6E9 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFCDC1911745DDD600CFC6E9 /* AboutUsViewController.xib */; };
+		CFCDC19C17460D2200CFC6E9 /* UIGlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCDC19B17460D2200CFC6E9 /* UIGlossyButton.m */; };
+		CFD2AC0817447549003FED17 /* EnviroDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2AC0617447549003FED17 /* EnviroDataViewController.m */; };
+		CFD2AC0917447549003FED17 /* EnviroDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC0717447549003FED17 /* EnviroDataViewController.xib */; };
+		CFD2AC0E1744758B003FED17 /* SavingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2AC0C1744758B003FED17 /* SavingDataViewController.m */; };
+		CFD2AC0F1744758B003FED17 /* SavingDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC0D1744758B003FED17 /* SavingDataViewController.xib */; };
+		CFD2AC241744B738003FED17 /* co2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC141744B738003FED17 /* co2.png */; };
+		CFD2AC251744B738003FED17 /* fen.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC151744B738003FED17 /* fen.png */; };
+		CFD2AC271744B738003FED17 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC171744B738003FED17 /* Home.png */; };
+		CFD2AC281744B738003FED17 /* irradiate.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC181744B738003FED17 /* irradiate.png */; };
+		CFD2AC291744B738003FED17 /* mei.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC191744B738003FED17 /* mei.png */; };
+		CFD2AC2A1744B738003FED17 /* module_temp.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC1A1744B738003FED17 /* module_temp.png */; };
+		CFD2AC2B1744B738003FED17 /* nox.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC1B1744B738003FED17 /* nox.png */; };
+		CFD2AC2C1744B738003FED17 /* plant_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC1C1744B738003FED17 /* plant_profile.png */; };
+		CFD2AC2E1744B738003FED17 /* saving.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC1E1744B738003FED17 /* saving.png */; };
+		CFD2AC2F1744B738003FED17 /* so2.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC1F1744B738003FED17 /* so2.png */; };
+		CFD2AC301744B738003FED17 /* Stat.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC201744B738003FED17 /* Stat.png */; };
+		CFD2AC311744B738003FED17 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC211744B738003FED17 /* time.png */; };
+		CFD2AC321744B738003FED17 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC221744B738003FED17 /* tree.png */; };
+		CFD2AC331744B738003FED17 /* wnd_speed.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC231744B738003FED17 /* wnd_speed.png */; };
+		CFD2AC601744C9BC003FED17 /* StatAnalysis.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC5F1744C9BC003FED17 /* StatAnalysis.png */; };
+		CFD2AC621744D0F6003FED17 /* Enviro.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC611744D0F6003FED17 /* Enviro.png */; };
+		CFD2AC651744DFF7003FED17 /* dev_data.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC631744DFF7003FED17 /* dev_data.png */; };
+		CFD2AC661744DFF7003FED17 /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CFD2AC641744DFF7003FED17 /* login_bg.png */; };
+		CFD50C23172777220066BF25 /* SimplePlantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD50C22172777220066BF25 /* SimplePlantTableViewCell.m */; };
+		CFD50C26172777350066BF25 /* SimplePlantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFD50C25172777350066BF25 /* SimplePlantTableViewCell.xib */; };
+		CFD50C2C1727AB290066BF25 /* zhejiangzhengt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFD50C2B1727AB290066BF25 /* zhejiangzhengt.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF1D164417250CCF009BD80A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF1D160F17250CCF009BD80A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF1D161717250CCF009BD80A;
+			remoteInfo = ChiticBankClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C42405C1886C83D000B944E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		8C42405E1886C847000B944E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CF1D161817250CCF009BD80A /* ChiticBankClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChiticBankClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1D161C17250CCF009BD80A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF1D161E17250CCF009BD80A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF1D162017250CCF009BD80A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF1D162417250CCF009BD80A /* ChiticBankClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChiticBankClient-Info.plist"; sourceTree = "<group>"; };
+		CF1D162617250CCF009BD80A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF1D162817250CCF009BD80A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF1D162A17250CCF009BD80A /* ChiticBankClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChiticBankClient-Prefix.pch"; sourceTree = "<group>"; };
+		CF1D162B17250CCF009BD80A /* chiticeaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chiticeaAppDelegate.h; sourceTree = "<group>"; };
+		CF1D162C17250CCF009BD80A /* chiticeaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chiticeaAppDelegate.m; sourceTree = "<group>"; };
+		CF1D162E17250CCF009BD80A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CF1D163017250CCF009BD80A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CF1D163217250CCF009BD80A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF1D163417250CCF009BD80A /* chiticeaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chiticeaViewController.h; sourceTree = "<group>"; };
+		CF1D163517250CCF009BD80A /* chiticeaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chiticeaViewController.m; sourceTree = "<group>"; };
+		CF1D163817250CCF009BD80A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/chiticeaViewController.xib; sourceTree = "<group>"; };
+		CF1D163F17250CCF009BD80A /* ChiticBankClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChiticBankClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1D164017250CCF009BD80A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF1D164817250CCF009BD80A /* ChiticBankClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChiticBankClientTests-Info.plist"; sourceTree = "<group>"; };
+		CF1D164A17250CCF009BD80A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF1D164C17250CCF009BD80A /* ChiticBankClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChiticBankClientTests.h; sourceTree = "<group>"; };
+		CF1D164D17250CCF009BD80A /* ChiticBankClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChiticBankClientTests.m; sourceTree = "<group>"; };
+		CF1D1657172515F3009BD80A /* plantListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plantListViewController.h; sourceTree = "<group>"; };
+		CF1D1658172515F3009BD80A /* plantListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = plantListViewController.m; sourceTree = "<group>"; };
+		CF1D1659172515F3009BD80A /* plantListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = plantListViewController.xib; path = ChiticBankClient/plantListViewController.xib; sourceTree = "<group>"; };
+		CF3884AB1884C9F4003680C7 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		CF3884AC1884C9F4003680C7 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		CF3884AD1884C9F4003680C7 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		CF3884AE1884C9F4003680C7 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		CF3884AF1884C9F4003680C7 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		CF3884B01884C9F4003680C7 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		CF3884B11884C9F4003680C7 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		CF3884B21884C9F4003680C7 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		CF3884B31884C9F4003680C7 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		CF3884B41884C9F4003680C7 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		CF3884B51884C9F4003680C7 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		CF3884B61884C9F4003680C7 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		CF3884B71884C9F4003680C7 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		CF3884B81884C9F4003680C7 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		CF3884B91884C9F4003680C7 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		CF3884BA1884C9F4003680C7 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		CF3884BB1884C9F4003680C7 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		CF3884BC1884C9F4003680C7 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		CF3884BD1884C9F4003680C7 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		CF3884BE1884C9F4003680C7 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		CF3884C71884CA16003680C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF3884C91884CA36003680C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CF3884CB1884CA4C003680C7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		CF3884D91884CC31003680C7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CF3884DA1884CC31003680C7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CF38850C1884DA37003680C7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CF38850F1884DA41003680C7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CF7E146E174373A20080608A /* CharAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharAnalysisViewController.h; sourceTree = "<group>"; };
+		CF7E146F174373A20080608A /* CharAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharAnalysisViewController.m; sourceTree = "<group>"; };
+		CF7E1470174373A20080608A /* CharAnalysisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CharAnalysisViewController.xib; path = ChiticBankClient/CharAnalysisViewController.xib; sourceTree = "<group>"; };
+		CF7E1474174374DA0080608A /* DeviceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataViewController.h; sourceTree = "<group>"; };
+		CF7E1475174374DA0080608A /* DeviceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataViewController.m; sourceTree = "<group>"; };
+		CF7E1476174374DA0080608A /* DeviceDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeviceDataViewController.xib; path = ChiticBankClient/DeviceDataViewController.xib; sourceTree = "<group>"; };
+		CFCA7FE0174508430086B3EE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CFCA7FEA174509DA0086B3EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CFCBAF1F1728B5CC0007111A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ChiticBankClient/logo.png; sourceTree = "<group>"; };
+		CFCBAF211728BF7A0007111A /* bk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bk.jpg; path = ChiticBankClient/bk.jpg; sourceTree = "<group>"; };
+		CFCBAF2E1728C5A70007111A /* PlantOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlantOverviewViewController.h; sourceTree = "<group>"; };
+		CFCBAF2F1728C5A70007111A /* PlantOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlantOverviewViewController.m; sourceTree = "<group>"; };
+		CFCBAF301728C5A70007111A /* PlantOverviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlantOverviewViewController.xib; path = ChiticBankClient/PlantOverviewViewController.xib; sourceTree = "<group>"; };
+		CFCDC18F1745DDD600CFC6E9 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		CFCDC1901745DDD600CFC6E9 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		CFCDC1911745DDD600CFC6E9 /* AboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutUsViewController.xib; path = ChiticBankClient/AboutUsViewController.xib; sourceTree = "<group>"; };
+		CFCDC19A17460D2100CFC6E9 /* UIGlossyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGlossyButton.h; sourceTree = "<group>"; };
+		CFCDC19B17460D2200CFC6E9 /* UIGlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGlossyButton.m; sourceTree = "<group>"; };
+		CFD2AC0517447549003FED17 /* EnviroDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnviroDataViewController.h; path = ../EnviroDataViewController.h; sourceTree = "<group>"; };
+		CFD2AC0617447549003FED17 /* EnviroDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnviroDataViewController.m; path = ../EnviroDataViewController.m; sourceTree = "<group>"; };
+		CFD2AC0717447549003FED17 /* EnviroDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnviroDataViewController.xib; sourceTree = "<group>"; };
+		CFD2AC0B1744758B003FED17 /* SavingDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SavingDataViewController.h; path = ../SavingDataViewController.h; sourceTree = "<group>"; };
+		CFD2AC0C1744758B003FED17 /* SavingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SavingDataViewController.m; path = ../SavingDataViewController.m; sourceTree = "<group>"; };
+		CFD2AC0D1744758B003FED17 /* SavingDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavingDataViewController.xib; sourceTree = "<group>"; };
+		CFD2AC141744B738003FED17 /* co2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = co2.png; path = ChiticBankClient/co2.png; sourceTree = "<group>"; };
+		CFD2AC151744B738003FED17 /* fen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fen.png; path = ChiticBankClient/fen.png; sourceTree = "<group>"; };
+		CFD2AC171744B738003FED17 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = ChiticBankClient/Home.png; sourceTree = "<group>"; };
+		CFD2AC181744B738003FED17 /* irradiate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = irradiate.png; path = ChiticBankClient/irradiate.png; sourceTree = "<group>"; };
+		CFD2AC191744B738003FED17 /* mei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mei.png; path = ChiticBankClient/mei.png; sourceTree = "<group>"; };
+		CFD2AC1A1744B738003FED17 /* module_temp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = module_temp.png; path = ChiticBankClient/module_temp.png; sourceTree = "<group>"; };
+		CFD2AC1B1744B738003FED17 /* nox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nox.png; path = ChiticBankClient/nox.png; sourceTree = "<group>"; };
+		CFD2AC1C1744B738003FED17 /* plant_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant_profile.png; path = ChiticBankClient/plant_profile.png; sourceTree = "<group>"; };
+		CFD2AC1E1744B738003FED17 /* saving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = saving.png; path = ChiticBankClient/saving.png; sourceTree = "<group>"; };
+		CFD2AC1F1744B738003FED17 /* so2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = so2.png; path = ChiticBankClient/so2.png; sourceTree = "<group>"; };
+		CFD2AC201744B738003FED17 /* Stat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stat.png; path = ChiticBankClient/Stat.png; sourceTree = "<group>"; };
+		CFD2AC211744B738003FED17 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = time.png; path = ChiticBankClient/time.png; sourceTree = "<group>"; };
+		CFD2AC221744B738003FED17 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tree.png; path = ChiticBankClient/tree.png; sourceTree = "<group>"; };
+		CFD2AC231744B738003FED17 /* wnd_speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wnd_speed.png; path = ChiticBankClient/wnd_speed.png; sourceTree = "<group>"; };
+		CFD2AC5F1744C9BC003FED17 /* StatAnalysis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StatAnalysis.png; path = ChiticBankClient/StatAnalysis.png; sourceTree = "<group>"; };
+		CFD2AC611744D0F6003FED17 /* Enviro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Enviro.png; path = ChiticBankClient/Enviro.png; sourceTree = "<group>"; };
+		CFD2AC631744DFF7003FED17 /* dev_data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dev_data.png; path = ChiticBankClient/dev_data.png; sourceTree = "<group>"; };
+		CFD2AC641744DFF7003FED17 /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_bg.png; path = ChiticBankClient/login_bg.png; sourceTree = "<group>"; };
+		CFD50C21172777220066BF25 /* SimplePlantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePlantTableViewCell.h; sourceTree = "<group>"; };
+		CFD50C22172777220066BF25 /* SimplePlantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePlantTableViewCell.m; sourceTree = "<group>"; };
+		CFD50C25172777350066BF25 /* SimplePlantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SimplePlantTableViewCell.xib; path = ChiticBankClient/SimplePlantTableViewCell.xib; sourceTree = "<group>"; };
+		CFD50C2B1727AB290066BF25 /* zhejiangzhengt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zhejiangzhengt.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF1D161517250CCF009BD80A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3884CA1884CA36003680C7 /* MobileCoreServices.framework in Frameworks */,
+				CF3885101884DA41003680C7 /* CFNetwork.framework in Frameworks */,
+				CF38850D1884DA37003680C7 /* libxml2.dylib in Frameworks */,
+				CF3884CC1884CA4C003680C7 /* libz.1.2.5.dylib in Frameworks */,
+				CF1D162117250CCF009BD80A /* CoreGraphics.framework in Frameworks */,
+				CF3884C81884CA16003680C7 /* SystemConfiguration.framework in Frameworks */,
+				CF1D161D17250CCF009BD80A /* UIKit.framework in Frameworks */,
+				CF1D161F17250CCF009BD80A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF1D163B17250CCF009BD80A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1D164117250CCF009BD80A /* SenTestingKit.framework in Frameworks */,
+				CF1D164217250CCF009BD80A /* UIKit.framework in Frameworks */,
+				CF1D164317250CCF009BD80A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C42405A1886C824000B944E /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				8C42405C1886C83D000B944E /* JSONKit.m */,
+				8C42405E1886C847000B944E /* JSONKit.h */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		CF1D160D17250CCF009BD80A = {
+			isa = PBXGroup;
+			children = (
+				8C42405A1886C824000B944E /* JSONKit */,
+				CF3884A91884C9D7003680C7 /* ASIHTTPRequest */,
+				CFD2AC371744B95C003FED17 /* Res */,
+				CFC305281743B0D7001AA242 /* UI */,
+				CF1D162217250CCF009BD80A /* ChiticBankClient */,
+				CF1D164617250CCF009BD80A /* ChiticBankClientTests */,
+				CF1D161B17250CCF009BD80A /* Frameworks */,
+				CF1D161917250CCF009BD80A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF1D161917250CCF009BD80A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D161817250CCF009BD80A /* ChiticBankClient.app */,
+				CF1D163F17250CCF009BD80A /* ChiticBankClientTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1D161B17250CCF009BD80A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF38850F1884DA41003680C7 /* CFNetwork.framework */,
+				CF38850C1884DA37003680C7 /* libxml2.dylib */,
+				CF3884CB1884CA4C003680C7 /* libz.1.2.5.dylib */,
+				CF3884C91884CA36003680C7 /* MobileCoreServices.framework */,
+				CF3884C71884CA16003680C7 /* SystemConfiguration.framework */,
+				CF1D161C17250CCF009BD80A /* UIKit.framework */,
+				CF1D161E17250CCF009BD80A /* Foundation.framework */,
+				CF1D162017250CCF009BD80A /* CoreGraphics.framework */,
+				CF1D164017250CCF009BD80A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1D162217250CCF009BD80A /* ChiticBankClient */ = {
+			isa = PBXGroup;
+			children = (
+				CFCDC19A17460D2100CFC6E9 /* UIGlossyButton.h */,
+				CFCDC19B17460D2200CFC6E9 /* UIGlossyButton.m */,
+				CFCDC18F1745DDD600CFC6E9 /* AboutUsViewController.h */,
+				CFCDC1901745DDD600CFC6E9 /* AboutUsViewController.m */,
+				CFD2AC0B1744758B003FED17 /* SavingDataViewController.h */,
+				CFD2AC0C1744758B003FED17 /* SavingDataViewController.m */,
+				CFD2AC0517447549003FED17 /* EnviroDataViewController.h */,
+				CFD2AC0617447549003FED17 /* EnviroDataViewController.m */,
+				CF1D162B17250CCF009BD80A /* chiticeaAppDelegate.h */,
+				CF1D162C17250CCF009BD80A /* chiticeaAppDelegate.m */,
+				CF1D163417250CCF009BD80A /* chiticeaViewController.h */,
+				CF1D163517250CCF009BD80A /* chiticeaViewController.m */,
+				CF1D1657172515F3009BD80A /* plantListViewController.h */,
+				CF1D1658172515F3009BD80A /* plantListViewController.m */,
+				CF7E1474174374DA0080608A /* DeviceDataViewController.h */,
+				CF7E1475174374DA0080608A /* DeviceDataViewController.m */,
+				CFCBAF2E1728C5A70007111A /* PlantOverviewViewController.h */,
+				CFCBAF2F1728C5A70007111A /* PlantOverviewViewController.m */,
+				CF7E146E174373A20080608A /* CharAnalysisViewController.h */,
+				CF7E146F174373A20080608A /* CharAnalysisViewController.m */,
+				CFD50C21172777220066BF25 /* SimplePlantTableViewCell.h */,
+				CFD50C22172777220066BF25 /* SimplePlantTableViewCell.m */,
+				CF1D162317250CCF009BD80A /* Supporting Files */,
+			);
+			path = ChiticBankClient;
+			sourceTree = "<group>";
+		};
+		CF1D162317250CCF009BD80A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFCA7FE9174509DA0086B3EE /* Localizable.strings */,
+				CFD50C2B1727AB290066BF25 /* zhejiangzhengt.jpg */,
+				CF1D162417250CCF009BD80A /* ChiticBankClient-Info.plist */,
+				CF1D162517250CCF009BD80A /* InfoPlist.strings */,
+				CF1D162817250CCF009BD80A /* main.m */,
+				CF1D162A17250CCF009BD80A /* ChiticBankClient-Prefix.pch */,
+				CF1D162E17250CCF009BD80A /* Default.png */,
+				CF1D163017250CCF009BD80A /* Default@2x.png */,
+				CF1D163217250CCF009BD80A /* Default-568h@2x.png */,
+				CFCA7FE0174508430086B3EE /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF1D164617250CCF009BD80A /* ChiticBankClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D164C17250CCF009BD80A /* ChiticBankClientTests.h */,
+				CF1D164D17250CCF009BD80A /* ChiticBankClientTests.m */,
+				CF1D164717250CCF009BD80A /* Supporting Files */,
+			);
+			path = ChiticBankClientTests;
+			sourceTree = "<group>";
+		};
+		CF1D164717250CCF009BD80A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D164817250CCF009BD80A /* ChiticBankClientTests-Info.plist */,
+				CF1D164917250CCF009BD80A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF3884A91884C9D7003680C7 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CF3884AB1884C9F4003680C7 /* ASIAuthenticationDialog.h */,
+				CF3884AC1884C9F4003680C7 /* ASIAuthenticationDialog.m */,
+				CF3884AD1884C9F4003680C7 /* ASICacheDelegate.h */,
+				CF3884AE1884C9F4003680C7 /* ASIDataCompressor.h */,
+				CF3884AF1884C9F4003680C7 /* ASIDataCompressor.m */,
+				CF3884B01884C9F4003680C7 /* ASIDataDecompressor.h */,
+				CF3884B11884C9F4003680C7 /* ASIDataDecompressor.m */,
+				CF3884B21884C9F4003680C7 /* ASIDownloadCache.h */,
+				CF3884D91884CC31003680C7 /* Reachability.h */,
+				CF3884DA1884CC31003680C7 /* Reachability.m */,
+				CF3884B31884C9F4003680C7 /* ASIDownloadCache.m */,
+				CF3884B41884C9F4003680C7 /* ASIFormDataRequest.h */,
+				CF3884B51884C9F4003680C7 /* ASIFormDataRequest.m */,
+				CF3884B61884C9F4003680C7 /* ASIHTTPRequest.h */,
+				CF3884B71884C9F4003680C7 /* ASIHTTPRequest.m */,
+				CF3884B81884C9F4003680C7 /* ASIHTTPRequestConfig.h */,
+				CF3884B91884C9F4003680C7 /* ASIHTTPRequestDelegate.h */,
+				CF3884BA1884C9F4003680C7 /* ASIInputStream.h */,
+				CF3884BB1884C9F4003680C7 /* ASIInputStream.m */,
+				CF3884BC1884C9F4003680C7 /* ASINetworkQueue.h */,
+				CF3884BD1884C9F4003680C7 /* ASINetworkQueue.m */,
+				CF3884BE1884C9F4003680C7 /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		CFC305281743B0D7001AA242 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2AC0D1744758B003FED17 /* SavingDataViewController.xib */,
+				CFD50C25172777350066BF25 /* SimplePlantTableViewCell.xib */,
+				CF7E1470174373A20080608A /* CharAnalysisViewController.xib */,
+				CF1D1659172515F3009BD80A /* plantListViewController.xib */,
+				CF7E1476174374DA0080608A /* DeviceDataViewController.xib */,
+				CFD2AC0717447549003FED17 /* EnviroDataViewController.xib */,
+				CFCBAF301728C5A70007111A /* PlantOverviewViewController.xib */,
+				CF1D163717250CCF009BD80A /* chiticeaViewController.xib */,
+				CFCDC1911745DDD600CFC6E9 /* AboutUsViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		CFD2AC371744B95C003FED17 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2AC631744DFF7003FED17 /* dev_data.png */,
+				CFD2AC641744DFF7003FED17 /* login_bg.png */,
+				CFD2AC611744D0F6003FED17 /* Enviro.png */,
+				CFD2AC5F1744C9BC003FED17 /* StatAnalysis.png */,
+				CFD2AC171744B738003FED17 /* Home.png */,
+				CFD2AC1B1744B738003FED17 /* nox.png */,
+				CFD2AC181744B738003FED17 /* irradiate.png */,
+				CFD2AC1C1744B738003FED17 /* plant_profile.png */,
+				CFD2AC1A1744B738003FED17 /* module_temp.png */,
+				CFD2AC191744B738003FED17 /* mei.png */,
+				CFD2AC151744B738003FED17 /* fen.png */,
+				CFD2AC141744B738003FED17 /* co2.png */,
+				CFD2AC1E1744B738003FED17 /* saving.png */,
+				CFD2AC1F1744B738003FED17 /* so2.png */,
+				CFD2AC201744B738003FED17 /* Stat.png */,
+				CFD2AC211744B738003FED17 /* time.png */,
+				CFD2AC221744B738003FED17 /* tree.png */,
+				CFD2AC231744B738003FED17 /* wnd_speed.png */,
+				CFCBAF211728BF7A0007111A /* bk.jpg */,
+				CFCBAF1F1728B5CC0007111A /* logo.png */,
+			);
+			name = Res;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF1D161717250CCF009BD80A /* ChiticBankClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF1D165117250CCF009BD80A /* Build configuration list for PBXNativeTarget "ChiticBankClient" */;
+			buildPhases = (
+				CF1D161417250CCF009BD80A /* Sources */,
+				CF1D161517250CCF009BD80A /* Frameworks */,
+				CF1D161617250CCF009BD80A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChiticBankClient;
+			productName = ChiticBankClient;
+			productReference = CF1D161817250CCF009BD80A /* ChiticBankClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF1D163E17250CCF009BD80A /* ChiticBankClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF1D165417250CCF009BD80A /* Build configuration list for PBXNativeTarget "ChiticBankClientTests" */;
+			buildPhases = (
+				CF1D163A17250CCF009BD80A /* Sources */,
+				CF1D163B17250CCF009BD80A /* Frameworks */,
+				CF1D163C17250CCF009BD80A /* Resources */,
+				CF1D163D17250CCF009BD80A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF1D164517250CCF009BD80A /* PBXTargetDependency */,
+			);
+			name = ChiticBankClientTests;
+			productName = ChiticBankClientTests;
+			productReference = CF1D163F17250CCF009BD80A /* ChiticBankClientTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF1D160F17250CCF009BD80A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = chiticea;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = chitic;
+			};
+			buildConfigurationList = CF1D161217250CCF009BD80A /* Build configuration list for PBXProject "ChiticBankClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zn-Hans",
+				"zh-Hans",
+			);
+			mainGroup = CF1D160D17250CCF009BD80A;
+			productRefGroup = CF1D161917250CCF009BD80A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF1D161717250CCF009BD80A /* ChiticBankClient */,
+				CF1D163E17250CCF009BD80A /* ChiticBankClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF1D161617250CCF009BD80A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1D162717250CCF009BD80A /* InfoPlist.strings in Resources */,
+				CF1D162F17250CCF009BD80A /* Default.png in Resources */,
+				CF1D163117250CCF009BD80A /* Default@2x.png in Resources */,
+				CF1D163317250CCF009BD80A /* Default-568h@2x.png in Resources */,
+				CF1D163917250CCF009BD80A /* chiticeaViewController.xib in Resources */,
+				CF1D165B172515F3009BD80A /* plantListViewController.xib in Resources */,
+				CFD50C26172777350066BF25 /* SimplePlantTableViewCell.xib in Resources */,
+				CFD50C2C1727AB290066BF25 /* zhejiangzhengt.jpg in Resources */,
+				CFCBAF201728B5CC0007111A /* logo.png in Resources */,
+				CFCBAF221728BF7A0007111A /* bk.jpg in Resources */,
+				CFCBAF321728C5A70007111A /* PlantOverviewViewController.xib in Resources */,
+				CF7E1472174373A20080608A /* CharAnalysisViewController.xib in Resources */,
+				CF7E1478174374DA0080608A /* DeviceDataViewController.xib in Resources */,
+				CFD2AC0917447549003FED17 /* EnviroDataViewController.xib in Resources */,
+				CFD2AC0F1744758B003FED17 /* SavingDataViewController.xib in Resources */,
+				CFD2AC241744B738003FED17 /* co2.png in Resources */,
+				CFD2AC251744B738003FED17 /* fen.png in Resources */,
+				CFD2AC271744B738003FED17 /* Home.png in Resources */,
+				CFD2AC281744B738003FED17 /* irradiate.png in Resources */,
+				CFD2AC291744B738003FED17 /* mei.png in Resources */,
+				CFD2AC2A1744B738003FED17 /* module_temp.png in Resources */,
+				CFD2AC2B1744B738003FED17 /* nox.png in Resources */,
+				CFD2AC2C1744B738003FED17 /* plant_profile.png in Resources */,
+				CFD2AC2E1744B738003FED17 /* saving.png in Resources */,
+				CFD2AC2F1744B738003FED17 /* so2.png in Resources */,
+				CFD2AC301744B738003FED17 /* Stat.png in Resources */,
+				CFD2AC311744B738003FED17 /* time.png in Resources */,
+				CFD2AC321744B738003FED17 /* tree.png in Resources */,
+				CFD2AC331744B738003FED17 /* wnd_speed.png in Resources */,
+				CFD2AC601744C9BC003FED17 /* StatAnalysis.png in Resources */,
+				CFD2AC621744D0F6003FED17 /* Enviro.png in Resources */,
+				CFD2AC651744DFF7003FED17 /* dev_data.png in Resources */,
+				CFD2AC661744DFF7003FED17 /* login_bg.png in Resources */,
+				CFCA7FE1174508430086B3EE /* Localizable.strings in Resources */,
+				CFCA7FEB174509DA0086B3EE /* Localizable.strings in Resources */,
+				CFCDC1931745DDD600CFC6E9 /* AboutUsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF1D163C17250CCF009BD80A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1D164B17250CCF009BD80A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF1D163D17250CCF009BD80A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF1D161417250CCF009BD80A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3884DC1884CC81003680C7 /* Reachability.h in Sources */,
+				CF3884DD1884CC81003680C7 /* Reachability.m in Sources */,
+				CF3884CD1884CADE003680C7 /* ASIAuthenticationDialog.h in Sources */,
+				CF3884CE1884CADE003680C7 /* ASICacheDelegate.h in Sources */,
+				CF3884CF1884CADE003680C7 /* ASIDataCompressor.h in Sources */,
+				CF3884D01884CADE003680C7 /* ASIDataDecompressor.h in Sources */,
+				CF3884D11884CADE003680C7 /* ASIDownloadCache.h in Sources */,
+				CF3884D21884CADE003680C7 /* ASIFormDataRequest.h in Sources */,
+				CF3884D31884CADE003680C7 /* ASIHTTPRequest.h in Sources */,
+				CF3884D41884CADE003680C7 /* ASIHTTPRequestConfig.h in Sources */,
+				CF3884D51884CADE003680C7 /* ASIHTTPRequestDelegate.h in Sources */,
+				CF3884D61884CADE003680C7 /* ASIInputStream.h in Sources */,
+				CF3884D71884CADE003680C7 /* ASINetworkQueue.h in Sources */,
+				CF3884D81884CADE003680C7 /* ASIProgressDelegate.h in Sources */,
+				CF1D162917250CCF009BD80A /* main.m in Sources */,
+				CF1D162D17250CCF009BD80A /* chiticeaAppDelegate.m in Sources */,
+				CF1D163617250CCF009BD80A /* chiticeaViewController.m in Sources */,
+				CF1D165A172515F3009BD80A /* plantListViewController.m in Sources */,
+				CFD50C23172777220066BF25 /* SimplePlantTableViewCell.m in Sources */,
+				CFCBAF311728C5A70007111A /* PlantOverviewViewController.m in Sources */,
+				CF7E1471174373A20080608A /* CharAnalysisViewController.m in Sources */,
+				CF7E1477174374DA0080608A /* DeviceDataViewController.m in Sources */,
+				CFD2AC0817447549003FED17 /* EnviroDataViewController.m in Sources */,
+				CFD2AC0E1744758B003FED17 /* SavingDataViewController.m in Sources */,
+				CFCDC1921745DDD600CFC6E9 /* AboutUsViewController.m in Sources */,
+				CFCDC19C17460D2200CFC6E9 /* UIGlossyButton.m in Sources */,
+				CF3884BF1884C9F4003680C7 /* ASIAuthenticationDialog.m in Sources */,
+				CF3884C01884C9F4003680C7 /* ASIDataCompressor.m in Sources */,
+				CF3884C11884C9F4003680C7 /* ASIDataDecompressor.m in Sources */,
+				CF3884C21884C9F4003680C7 /* ASIDownloadCache.m in Sources */,
+				CF3884C31884C9F4003680C7 /* ASIFormDataRequest.m in Sources */,
+				CF3884C41884C9F4003680C7 /* ASIHTTPRequest.m in Sources */,
+				CF3884C51884C9F4003680C7 /* ASIInputStream.m in Sources */,
+				CF3884C61884C9F4003680C7 /* ASINetworkQueue.m in Sources */,
+				8C42405D1886C83D000B944E /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF1D163A17250CCF009BD80A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1D164E17250CCF009BD80A /* ChiticBankClientTests.m in Sources */,
+				CF3884DB1884CC31003680C7 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF1D164517250CCF009BD80A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF1D161717250CCF009BD80A /* ChiticBankClient */;
+			targetProxy = CF1D164417250CCF009BD80A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF1D162517250CCF009BD80A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1D162617250CCF009BD80A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF1D163717250CCF009BD80A /* chiticeaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1D163817250CCF009BD80A /* en */,
+			);
+			name = chiticeaViewController.xib;
+			path = ChiticBankClient;
+			sourceTree = "<group>";
+		};
+		CF1D164917250CCF009BD80A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF1D164A17250CCF009BD80A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFCA7FE9174509DA0086B3EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFCA7FEA174509DA0086B3EE /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF1D164F17250CCF009BD80A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF1D165017250CCF009BD80A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF1D165217250CCF009BD80A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChiticBankClient/ChiticBankClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = "ChiticBankClient/ChiticBankClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF1D165317250CCF009BD80A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChiticBankClient/ChiticBankClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				INFOPLIST_FILE = "ChiticBankClient/ChiticBankClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF1D165517250CCF009BD80A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChiticBankClient.app/ChiticBankClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChiticBankClient/ChiticBankClient-Prefix.pch";
+				INFOPLIST_FILE = "ChiticBankClientTests/ChiticBankClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CF1D165617250CCF009BD80A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChiticBankClient.app/ChiticBankClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChiticBankClient/ChiticBankClient-Prefix.pch";
+				INFOPLIST_FILE = "ChiticBankClientTests/ChiticBankClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF1D161217250CCF009BD80A /* Build configuration list for PBXProject "ChiticBankClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1D164F17250CCF009BD80A /* Debug */,
+				CF1D165017250CCF009BD80A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1D165117250CCF009BD80A /* Build configuration list for PBXNativeTarget "ChiticBankClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1D165217250CCF009BD80A /* Debug */,
+				CF1D165317250CCF009BD80A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1D165417250CCF009BD80A /* Build configuration list for PBXNativeTarget "ChiticBankClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1D165517250CCF009BD80A /* Debug */,
+				CF1D165617250CCF009BD80A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF1D160F17250CCF009BD80A /* Project object */;
+}
